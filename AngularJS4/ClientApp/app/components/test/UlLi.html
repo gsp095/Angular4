@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{appTitle}}</title>
+</head>
+<body>
+<div>
+    
+    <h2>{{appTitle}}</h2>
+</div>
+<div *ngFor='let lst of appList'>
+    <ul>
+        <li>{{lst.ID}}</li>
+        <li>{{lst.Name}}</li>
+    </ul>
+</div>
+<div *ngFor='let lst of appImgList' style="padding:10px">
+    <img [src]='lst.url'/>
+</div>
+
+
+
+</body>
+</html>
